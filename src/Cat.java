@@ -47,5 +47,15 @@ public class Cat extends Animal {
                 "slept and has " + getEnergy() + " energy");
     }
 
+    public String toString() {
+
+        //to call the parent class version of a method, use super. notation
+        //super is necessary bc without it, toString() will be infinitely
+        //recursive bc this is the method we are currently defining
+        return super.toString() + " and is a cat with " + lives + " lives";
+
+    }
+
+
 
 }
