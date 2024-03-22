@@ -56,6 +56,19 @@ public class Cat extends Animal {
 
     }
 
+    public boolean equals(Object o) {
+        if (o instanceof Cat) {
+            Cat other = (Cat) o;
+            if (other.getName().equals(this.getName()) &&
+                    other.getEnergy() == this.getEnergy() &&
+                    other.lives == this.lives) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
 
 
 }

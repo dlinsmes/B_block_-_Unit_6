@@ -21,6 +21,8 @@ public class Polymorphism {
 
         System.out.println(c.getMemLoc());
 
+        //polymorphism - objects can have different behaviors bc they
+        // can have a different declared type vs actual type
         //objects can have different declared vs actual types
         //Animal is the declared type
         //Cat is the actual type
